@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VideoCall</title>
+    <meta name ='viewport' content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="VideoCall.css">
+</head>
+<body>
+
+    <div id = "video1">
+        <video class = "video-player" id="user-1" autoplay playsinline></video>
+    </div>
+
+    <div id = "video2">
+        <video class = "video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <div id = 'controls'>
+
+        <!-- 視訊畫面中的相機開關按鈕 -->
+        <div class = " control-container" id = 'camera-btn'>
+            <img src="icon/camera.png"/>
+        </div>
+
+        <!-- 視訊畫面中的麥克風開關按鈕 -->
+        <div class = " control-container" id = 'mic-btn'>
+            <img src="icon/mic.png"/>
+        </div>
+
+        <!-- 視訊畫面中的分享螢幕開關按鈕 -->
+        <div class = " control-container" id = 'screen-btn'>
+            <img src="icon/screen.png"/>
+        </div>
+
+        <!-- 視訊畫面中的挂電話按鈕 -->
+        <div class = " control-container" id = 'leave-btn'>
+            <img src="icon/phone.png"/>
+        </div>
+
+    </div>
+
+</body>
+<script src="agora-rtm-sdk-1.4.4.js"></script>
+<script src="AgoraRTC_N-4.11.0.js"></script>
+<script src="videoCall.js"></script>
+</html>
